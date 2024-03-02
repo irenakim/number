@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.5.0/jszip.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <h1>Числа</h1> 
+   <h4 class="action">Обрати файл з числами в форматі txt</h4>
+   <form id="upload" enctype="multipart/form-data">
+    <input type="file" name="file" id="file" accept=".txt">
+    <button type="button" id="download">Розрахувати</button>
+</form>
+<div class="wrap">
+    <div class="block">
+        <h5>Максимальне число в файлі</h5>
+        <div id="max" class="answer"></div>
+       </div>
+       <div class="block">
+        <h5>Мінімальне число в файлі</h5>
+        <div id="min" class="answer"></div>
+       </div>
+       <div class="block">
+        <h5>Медіана</h5>
+        <div id="median" class="answer"></div>
+       </div>
+       <div class="block">
+        <h5>Середнє арифметичне значення</h5>
+        <div id="average" class="answer"></div>
+       </div>
+       <div class="block">
+        <h5>Найбільша послідовність чисел, які йдуть один за одним в порядку зростання</h5>
+        <div id="maxSequence" class="answer"></div>
+       </div>
+       <div class="block">
+        <h5>Найбільша послідовність чисел, які йдуть один за одним в порядку спадання</h5>
+        <div id="minSequence" class="answer"></div>
+       </div>
+</div>
+   
+   <script src="main.js"></script>
+
+   </script>
+</body>
+</html>
